@@ -1,0 +1,11 @@
+.normalBar {
+    background-color: rgba(0, 16, 105, 0.445);
+    margin: 1%;
+    width: 97%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #013272, 0px 0px 5px #013272, 0px 0px 5px #013272,
+      0px 0px 5px #013272;
+  }
