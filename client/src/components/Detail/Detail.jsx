@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getCountryById } from "../../Redux/actions";
 import { Link } from "react-router-dom";
-//import "./DetailModule.css";
-//import CardsActivity from "./CardsActivity";
+import "./DetailModule.css";
+import CardsActivity from "./CardsActivity";
 
 const Detail = () => {
   const { id } = useParams();
@@ -19,7 +19,7 @@ const Detail = () => {
       <h1 className="nameCountry">{country.name}</h1>
       <div>
         <Link to="/home" className="backHome">
-          <span>⫷</span>
+          <span>Atras</span>
         </Link>
       </div>
       <div className="containerDetail">
@@ -45,7 +45,7 @@ const Detail = () => {
           </div>
         </div>
       </div>
-      {/* <div className="ContainerActivitiesDetail">
+      <div className="ContainerActivitiesDetail">
         <h2 className="nameActivity">Activities list</h2>
         <div className="containerCardsActivity">
           {country.activities && country.activities.length ? (
@@ -60,7 +60,7 @@ const Detail = () => {
             </div>
           )}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

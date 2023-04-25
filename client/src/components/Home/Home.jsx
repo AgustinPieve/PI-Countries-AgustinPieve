@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { getCountries, getActivities } from "../../Redux/actions";
 
 
-//import "./HomeModule.css";
 import Pagination from "../Pagination/Pagination";
 import { useState } from "react";
 
@@ -47,7 +46,7 @@ const Home = () => {
 
       {!countries.length ? (
         <div>
-          <h1 className="countryFail">One moment, please 😓</h1>
+          <h1 className="countryFail">One moment, please</h1>
         </div>
       ) : (
         <div>

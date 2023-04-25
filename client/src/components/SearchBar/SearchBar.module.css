@@ -1,0 +1,28 @@
+.barra:hover {
+    width: 300px;
+  
+    background-size: 30px;
+    padding: 10px 10px 10px 50px;
+    background-color: white;
+    color: darkblue;
+    box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4;
+  }
+  .barra:focus {
+    width: 300px;
+    color: darkblue;
+  
+    background-size: 30px;
+    padding: 10px 10px 10px 50px;
+    background-color: white;
+    color: darkblue;
+    box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4;
+  }
+  
+  .title {
+    margin-top: 0;
+    font-family: Arial;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgb(8, 0, 122), 0 0 10px #fff, 0 0 15px #fff,
+      0 0 20px #03e9f4, 0 0 30px #03e9f4, 0 0 40px #03e9f4;
+  }

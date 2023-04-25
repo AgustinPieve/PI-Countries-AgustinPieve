@@ -72,7 +72,7 @@ export const getActivities = () => {
   export const getCountryById = (id) => {
     return async function (dispatch) {
       try {
-        const response = await axios.get(`/countries/${id}`);
+        const response = await axios.get(`http://localhost:3001/countries/${id}`);
         dispatch({ type: GET_COUNTRIES_BY_ID, payload: response.data });
       } catch (error) {
         alert(error.message);
@@ -83,7 +83,7 @@ export const getActivities = () => {
   export const createActivity = (activity) => {
     return async function (dispatch) {
       try {
-        const response = await axios.post("/activities", activity);
+        const response = await axios.post("http://localhost:3001/activities", activity);
         alert(response.data.message);
         return dispatch({
           type: CREATE_ACTIVITY,

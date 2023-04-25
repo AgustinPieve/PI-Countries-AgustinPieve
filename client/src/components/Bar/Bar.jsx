@@ -9,19 +9,19 @@ const Bar = ({ activities, setCurrentPage }) => {
     <div>
       <div className={style.normalBar}>
         <span className="btn-select"></span>
-        <div className="containerSearchBarx">
+        <div className={style.containerSearchBarx}>
           <SearchBar setCurrentPage={setCurrentPage} />
         </div>
-        <div className="opctionMenu">
-          <p className="pTitleMenu">Filter by</p>
-          <div className="submenu">
+        <div className={style.opctionMenu}>
+          <p className={style.pTitleMenu}>Filter by</p>
+          <div className={style.submenu}>
             <Filter activities={activities} setCurrentPage={setCurrentPage} />
           </div>
         </div>
 
-        <div className="opctionMenu">
-          <p className="pTitleMenu">Order by</p>
-          <div className="submenu">
+        <div className={style.opctionMenu}>
+          <p className={style.pTitleMenu}>Order by</p>
+          <div className={style.submenu}>
             <Order activities={activities} setCurrentPage={setCurrentPage} />
           </div>
         </div>
@@ -33,7 +33,7 @@ const Bar = ({ activities, setCurrentPage }) => {
           <div className="submenu"></div>
           <br></br>
         </div> */}
-        <Link to="/create" className="goActivity">
+        <Link to="/create" className={style.goActivity}>
           <span>ADD ACTIVITY</span>
         </Link>
         <br></br>
