@@ -1,4 +1,3 @@
-//import "./module.css";
 
 import { orderAsdDes, orderPopulation } from "../../Redux/actions";
 import { AscDsc, population } from "./List";

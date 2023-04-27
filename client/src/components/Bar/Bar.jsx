@@ -8,7 +8,7 @@ const Bar = ({ activities, setCurrentPage }) => {
   return (
     <div>
       <div className={style.normalBar}>
-        <span className="btn-select"></span>
+        <span className={style.btnselect}></span>
         <div className={style.containerSearchBarx}>
           <SearchBar setCurrentPage={setCurrentPage} />
         </div>
@@ -25,14 +25,11 @@ const Bar = ({ activities, setCurrentPage }) => {
             <Order activities={activities} setCurrentPage={setCurrentPage} />
           </div>
         </div>
-{/* 
-        <div className="opctionMenu">
-          <a className="pTitleMenu" href="/me">
-            About me
-          </a>
-          <div className="submenu"></div>
+
+        <div className={style.opctionMenu}>
+          <div className={style.submenu}></div>
           <br></br>
-        </div> */}
+        </div>
         <Link to="/create" className={style.goActivity}>
           <span>ADD ACTIVITY</span>
         </Link>

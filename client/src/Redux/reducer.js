@@ -9,12 +9,16 @@ import {
     GET_COUNTRIES_BY_ID,
     CREATE_ACTIVITY } from "./actions";
 
+//Defino el estado inicial
+
 const initialState = {
     allCountries: [],
     countries: [],
     activities: [],
     countryDetail: {},
 };
+
+//Combino a todos los reducers en uno solo a partir del rootReducer para que sea pasado al store como primer parametro del createStore
 
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -41,19 +45,19 @@ const rootReducer = (state = initialState, action) => {
               case GET_COUNTRIES_BY_ACTIVITIES:
                 return {
                   ...state,
-                  countries: state.allCountries.filter(
+                  countries: state.allCountries.filter( //filtro por paises segun la siguiente condición
                     (country) =>
                       country.activities &&
-                      country.activities.map((acti) => acti.name).includes(action.payload)
+                      country.activities.map((acti) => acti.name).includes(action.payload)// el pais debe tener actividades y que al menos una sea la recibida en payload 
                   ),
                 };
           
               case ORDER_ASC_DES: {
                 action.payload === "A-Z"
-                  ? state.countries.sort((a, b) => {
-                      if (a.name > b.name) return 1;
-                      if (a.name < b.name) return -1;
-                      return 0;
+                  ? state.countries.sort((a, b) => { //uso sort para ordenar en funcion de una comparación
+                      if (a.name > b.name) return 1; //devuelvo 1 para indicar que el name de a debe ir despues de b
+                      if (a.name < b.name) return -1; //devuelvo -1 para indicar que el name de a debe ir antes de b
+                      return 0; // devuelvo 0 si los elementos son iguales
                     })
                   : state.countries.sort((a, b) => {
                       if (a.name < b.name) return 1;

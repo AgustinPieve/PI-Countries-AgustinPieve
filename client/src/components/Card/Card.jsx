@@ -8,8 +8,8 @@ const Card = (props) => {
       <div className={style.card}>
         <img src={props.flags} alt={props.name} className={style.image} />
         <div className={style.textBox}>
-          <h1 className="name">{props.name}</h1>
-          <p className="continents">{props.continents}</p>
+          <h1 className={style.name}>{props.name}</h1>
+          <p className={style.continents}>{props.continents}</p>
         </div>
       </div>
     </Link>

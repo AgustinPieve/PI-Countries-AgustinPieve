@@ -6,12 +6,11 @@ import { Link, useHistory } from "react-router-dom";
 import { validation } from "./Validation";
 import s from "./Form.module.css";
 const CreateActivity = () => {
-  const history = useHistory();
+  const history = useHistory();//redirijo al user a una nueva pagina después de crear
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries);
-  //--------------------------------------Control y datos de froms
-  const [error, setError] = useState({});
-  const [activity, setActivity] = useState({
+  const [error, setError] = useState({});//manejo errores que puedan surgir
+  const [activity, setActivity] = useState({ //almaceno datos de la actividad a crear
     name: "",
     difficulty: "",
     duration: "",
@@ -21,7 +20,7 @@ const CreateActivity = () => {
 
   useEffect(() => {
     setError(validation(activity));
-    if (countries && Object.entries(countries).length !== 250) {
+    if (countries && Object.entries(countries).length !== 250) {//uso Object.entries para ver si el país ya tiene alguna propiedad
       dispatch(getCountries());
     }
   }, [dispatch, activity, countries]);
@@ -79,12 +78,6 @@ const CreateActivity = () => {
     history.push("/create");
   };
 
-//   function handleDelete(event) {
-//     setActivity({
-//       ...activity,
-//       countries: activity.countries.filter((contry) => contry !== event),
-//     });
-//   }
 
   return (
     <div className={s.containerAllCreate}>

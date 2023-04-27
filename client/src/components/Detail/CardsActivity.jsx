@@ -1,4 +1,3 @@
-//import DificultyStars from "./dificultyStars";
 
 const CardsActivity = ({ activity }) => {
   return (
@@ -11,7 +10,7 @@ const CardsActivity = ({ activity }) => {
           <p>Season: </p>
         </div>
         <div className="containerDataActivity">
-          {/* <DificultyStars number={activity.difficulty} /> */}
+          <p> {activity.difficulty}</p>
           <p> {activity.duration} hours</p>
           <p> {activity.season}</p>
         </div>

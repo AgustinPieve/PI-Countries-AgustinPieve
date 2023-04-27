@@ -12,14 +12,16 @@ export const CREATE_ACTIVITY = "CREATE_ACTIVITY";
 //Traigo a todos los paises
 
 export const getCountries = () => {
-    return async function (dispatch) {
-        const response = await axios.get("http://localhost:3001/countries");
-        return dispatch({
-            type: GET_COUNTRIES,
-            payload: response.data,
-        });
-    };
+  return async function (dispatch) {
+      const response = await fetch("http://localhost:3001/countries");
+      const data = await response.json();
+      return dispatch({
+          type: GET_COUNTRIES,
+          payload: data,
+      });
+  };
 };
+
 
 export const getActivities = () => {
     return async function (dispatch) {

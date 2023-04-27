@@ -14,6 +14,16 @@ activitiesRoutes.get("/", async (req, res) => {
     }
 });
 
+// activitiesRoutes.get("/", (req, res) => {
+//     getAllActivities()
+//     .then((allActivities) => {
+//     res.status(200).json(allActivities);
+//     })
+//     .catch((error) => {
+//     res.status(400).json({ error: error.message });
+//     });
+//     });
+
 activitiesRoutes.post("/", async (req, res) => {
     try {
         const { name, difficulty, duration, season, countries} = req.body;

@@ -9,9 +9,9 @@ import CardsActivity from "./CardsActivity";
 const Detail = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const country = useSelector((state) => state.countryDetail);
+  const country = useSelector((state) => state.countryDetail);//obtengo state actual de countryDetail
   useEffect(() => {
-    dispatch(getCountryById(id));
+    dispatch(getCountryById(id));//uso useEffect para ejecutar la fn cada vez que le componente se monte o el valor de id cambie
   }, [dispatch, id]);
 
   return (

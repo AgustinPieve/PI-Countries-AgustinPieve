@@ -6,7 +6,7 @@ const getAllCountries = async () => {
     try {
         let AllCountries = await Country.findAll(); //traigo los datos de la db a esta variable
 
-        if (!AllCountries.length) {
+        if (!AllCountries.length) { 
             const arr = await reqDbData();
             await Country.bulkCreate(arr);
         }

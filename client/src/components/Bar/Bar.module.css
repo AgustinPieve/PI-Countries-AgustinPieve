@@ -1,13 +1,13 @@
 .normalBar {
-    background-color: rgba(0, 16, 105, 0.445);
+    background-color: rgba(255, 255, 255, 0.3);
     margin: 1%;
     width: 97%;
     border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 5px #013272, 0px 0px 5px #013272, 0px 0px 5px #013272,
-      0px 0px 5px #013272;
+    box-shadow: 0px 0px 5px #c8d1d2, 0px 0px 5px #c8d1d2, 0px 0px 5px #c8d1d2,
+      0px 0px 5px #c8d1d2;
   }
 
   .opctionMenu {
@@ -15,8 +15,8 @@
   }
   .opctionMenu:hover {
     scale: 1.1;
-    text-shadow: 0px 0px 15px #03e9f4, 0px 0px 30px #03e9f4, 0px 0px 40px #03e9f4,
-      0px 0px 50px #03e9f4;
+    text-shadow: 0px 0px 15px #c8d1d2, 0px 0px 30px #c8d1d2, 0px 0px 40px #c8d1d2,
+      0px 0px 50px #c8d1d2;
   }
   
   .submenu {
@@ -53,10 +53,10 @@
   .goActivity {
     height: fit-content;
     padding: 10px 20px; 
-    color: #03e9f4;
+    color: aliceblue;
     transition: 0.5s;
     letter-spacing: 3px; 
-    box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4;
+    box-shadow: 0 0 5px aliceblue, 0 0 5px aliceblue, 0 0 5px aliceblue;
     border-radius: 100px;
     background-color: black;
     font-size: small;
@@ -64,16 +64,16 @@
   }
   
   .goActivity:hover {
-    background: #03e9f4;
+    background: aliceblue;
     color: #050801;
-    box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 30px #03e9f4;
+    box-shadow: 0 0 5px aliceblue, 0 0 5px aliceblue, 0 0 30px aliceblue;
   }
   .buttonMini {
     display: none;
   }
-  /* //------------------------------------------------------------------MINI MENU */
+  /* //------------------------------------------------------------------MINI MENU  */
   
-  /* @media screen and (max-width: 750px) {
+   @media screen and (max-width: 750px) {
     .normalBar {
       background-color: rgb(1, 1, 36);
   
@@ -98,11 +98,11 @@
     }
     .opctionMenu:hover {
       scale: 1;
-      text-shadow: 0px 0px 15px #03e9f4, 0px 0px 30px #03e9f4,
-        0px 0px 40px #03e9f4, 0px 0px 50px #03e9f4;
+      text-shadow: 0px 0px 15px aliceblue, 0px 0px 30px aliceblue,
+        0px 0px 40px aliceblue, 0px 0px 50px aliceblue;
     }
   
-    .btn-select {
+    .btnselect {
       background: url("https://imgur.com/VbcTojM.png") no-repeat;
       cursor: pointer;
       position: absolute;
@@ -131,5 +131,5 @@
       display: block;
       width: 90%;
     }
-  } */
+  }
 

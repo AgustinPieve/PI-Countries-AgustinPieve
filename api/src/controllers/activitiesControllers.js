@@ -23,22 +23,22 @@ const createActivity = async (name, difficulty, duration, season, countries) => 
             where: { name: name },
             defaults: { difficulty, duration, season, },
         });
-        // await activity.addCountries(countries);
-        // let response = {};
-        // if(created){
-        //     (response = {message: `La actividad ${name} fue creada`, ...activity.dataValues, })    
-        // }else (response = { message: `La actividad ${name} ya existe`});
-
-        // return response;
         await activity.addCountries(countries);
-    let response = {};
-    created
-      ? (response = {
-          message: `La actividad ${name} creada satisfactoriamente`,
-          ...activity.dataValues,
-        })
-      : (response = { message: `La actividad ${name} ya existe` });
-    return response;
+        let response = {};
+        if(created){
+            (response = {message: `La actividad ${name} fue creada`, ...activity.dataValues, })    
+        }else (response = { message: `La actividad ${name} ya existe`});
+
+        return response;
+      //   await activity.addCountries(countries);
+      //   let response = {};
+      //     created
+      // ? (response = {
+      //     message: `La actividad ${name} creada satisfactoriamente`,
+      //     ...activity.dataValues,
+      //   })
+      // : (response = { message: `La actividad ${name} ya existe` });
+    //return response;
     } catch (error) {
         return error;
     }
@@ -61,6 +61,25 @@ const getAllActivities = async () => {
       return error;
     }
   };
+
+  // const getAllActivities = () => {
+  //   return Activity.findAll({
+  //     include: [
+  //       {
+  //         model: Country,
+  //         attributes: ["name"],
+  //         through: { attributes: [] },
+  //       },
+  //     ],
+  //   })
+  //     .then((allActivities) => {
+  //       return allActivities;
+  //     })
+  //     .catch((error) => {
+  //       return error;
+  //     });
+  // };
+  
 
 
 module.exports = { createActivity, getAllActivities };

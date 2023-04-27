@@ -1,5 +1,6 @@
 const axios = require('axios');
 
+//Creo función para traer la data desde la API hacia mi BDD
 const reqDbData = async () => {
     API = 'https://restcountries.com/v3/all';
 
@@ -9,9 +10,9 @@ const reqDbData = async () => {
             return {
                 id: pais.cca3,
                 name: pais.name.common,
-                flags: pais.flags[0],
-                continents: pais.continents[0],
-                capital: pais.capital ? pais.capital[0] : "No hay datos",
+                flags: pais.flags,
+                continents: pais.continents,
+                capital: pais.capital,
                 subregion: pais.subregion,
                 area: pais.area,
                 population: pais.population,

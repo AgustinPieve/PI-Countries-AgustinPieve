@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+.glassLanding {
+  width: 500px;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: white;
+  background: rgba(1, 0, 3, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(55px);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+.textoTodoLanding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.textolandig1 {
+  color: aliceblue;
+}
+.textolandig2 {
+  color: aliceblue;
+}
+.titlelandigpage {
+  color: aliceblue;
+}
+.start {
+    padding: 20px 30px; /*forma de boton */
+    color: #c8d1d2;
+    transition: 0.5s;
+    letter-spacing: 3px; /*espacio entre letras */
+    box-shadow: 0 0 40px #ffffff;
+    border-radius: 50px;
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    height: fit-content;
+  }
+  
+  .start:hover {
+    background: #ffffff;
+    color: #050801;
+    box-shadow: 0 0 5px #c8d1d2, 0 0 25px #c8d1d2, 0 0 50px #c8d1d2,
+      0 0 700px #c8d1d2;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  .contentsStart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

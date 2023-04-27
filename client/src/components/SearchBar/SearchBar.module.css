@@ -5,7 +5,7 @@
     padding: 10px 10px 10px 50px;
     background-color: white;
     color: darkblue;
-    box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4;
+    box-shadow: 0 0 5px #c8d1d2, 0 0 5px #c8d1d2, 0 0 5px #c8d1d2;
   }
   .barra:focus {
     width: 300px;
@@ -15,14 +15,7 @@
     padding: 10px 10px 10px 50px;
     background-color: white;
     color: darkblue;
-    box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4;
+    box-shadow: 0 0 5px #c8d1d2, 0 0 5px #c8d1d2, 0 0 5px #c8d1d2;
   }
   
-  .title {
-    margin-top: 0;
-    font-family: Arial;
-    letter-spacing: 1px;
-    color: #ffffff;
-    text-shadow: 0 0 5px rgb(8, 0, 122), 0 0 10px #fff, 0 0 15px #fff,
-      0 0 20px #03e9f4, 0 0 30px #03e9f4, 0 0 40px #03e9f4;
-  }
+ 
